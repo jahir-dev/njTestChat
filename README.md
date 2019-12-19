@@ -14,6 +14,6 @@ A chat using mvc/php/mysql without framework
 use the database.sql file to create the database structure with initial sample of users and messages
 
 ### Users
-username : nabil  password: 0000
-username : zack  password: 123
+* username : nabil  password: 0000
+* username : zack  password: 123
 
