@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If it's a file/directory/symlink, serve it.
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -l
+    RewriteRule ^.*$ - [NC,L]
+
+    #Go to the index
+    RewriteRule ^(.*)$ index.php?params=$1
+
+</IfModule>
