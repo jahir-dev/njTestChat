@@ -1,0 +1,21 @@
+{
+    "name": "nabil/chat",
+    "description": "Test Chat",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nabil",
+            "email": "n.jahir@timmxware.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "Controller/",
+            "Model\\": "Model/",
+            "Repository\\": "DAO/"
+        }
+    }
+}
